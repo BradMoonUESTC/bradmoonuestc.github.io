@@ -1342,3 +1342,12 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+.level-badge {
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+  padding: 0.1rem 0.3rem;
+  background: rgba(255,255,255,0.2);
+  border-radius: 3px;
+  font-weight: normal;
+}
