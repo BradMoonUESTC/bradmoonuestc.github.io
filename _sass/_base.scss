@@ -1351,3 +1351,14 @@ ninja-keys::part(ninja-input-wrapper) {
   border-radius: 3px;
   font-weight: normal;
 }
+
+.badge.abbr {
+  background-color: var(--global-theme-color);
+  color: white;
+}
+
+.badge.level {
+  background-color: #28a745;  // 绿色
+  color: white;
+  margin-left: 5px;
+}
