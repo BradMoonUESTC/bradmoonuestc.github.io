@@ -1362,3 +1362,25 @@ ninja-keys::part(ninja-input-wrapper) {
   color: white;
   margin-left: 5px;
 }
+// Audit bounties
+.audit-bounties {
+  .total-info {
+    margin-bottom: 1rem;
+    
+    .rank-info {
+      font-size: 1.1rem;
+      margin: 0;
+      
+      .rank-number {
+        color: var(--global-theme-color);
+        font-weight: bold;
+        margin-right: 1rem;
+      }
+      
+      .total-amount {
+        color: #28a745;
+        font-weight: bold;
+      }
+    }
+  }
+}

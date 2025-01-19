@@ -15,6 +15,7 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 # latest_posts: false # includes a list of the newest posts
 social: true # includes social icons at the bottom of the page
+audit_bounties: true # includes a list of audit bounties
 ---
 I'm a Senior Security Engineer at [OKX](https://www.okx.com/) and serve as a consultant at [MetaTrust Labs](https://metatrust.io/). My research interests span blockchain security, software security, and LLM applications in security, bridging both academic research and industry practice.
 

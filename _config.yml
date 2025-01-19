@@ -114,7 +114,8 @@ giscus:
   theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
   emit_metadata: 0
   lang: en
-
+audit_bounties_total: 68570  # 总金额
+audit_bounties_rank: 2  # 排名
 # Disqus comments (DEPRECATED)
 disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -152,14 +153,16 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
-
+audit_bounties:
+    output: true
+    permalink: /audit_bounties/:path/
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
