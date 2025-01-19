@@ -23,28 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "dropdown-publications",
-              title: "publications",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "dropdown-projects",
-              title: "projects",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
       
         title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
@@ -77,8 +56,14 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+    },{id: "news-our-paper-static-application-security-testing-sast-tools-for-smart-contracts-how-far-are-we-has-won-the-acm-sigsoft-distinguished-paper-award",
+          title: 'Our paper “Static Application Security Testing (SAST) Tools for Smart Contracts: How Far...',
+          description: "",
+          section: "News",},{id: "news-our-paper-chain-of-understanding-supporting-developers-code-understanding-with-large-language-models-has-just-been-accepted-by-fse-2025",
+          title: 'Our paper “Chain of Understanding: Supporting Developers Code Understanding with Large Language Models”...',
+          description: "",
+          section: "News",},{id: "news-our-paper-smart-contract-fuzzing-towards-profitable-vulnerabilities-has-just-been-accepted-by-fse-2025",
+          title: 'Our paper “Smart Contract Fuzzing Towards Profitable Vulnerabilities” has just been accepted by...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
