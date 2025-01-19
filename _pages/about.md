@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 audit_bounties: true # includes a list of audit bounties
 ---
-I'm a Senior Security Engineer at [OKX](https://www.okx.com/) and serve as a consultant at [MetaTrust Labs](https://metatrust.io/). My research interests span blockchain security, software security, and LLM applications in security, bridging both academic research and industry practice.
+I'm a Security Engineer in blockchain security. My research interests span blockchain security, software security, and LLM applications in security, bridging both academic research and industry practice.
 
 I received my B.E. degree from [UESTC](https://www.uestc.edu.cn/) in 2015. After three years as a software engineer, I pursued my M.S. degree in the Academician [Fang Binxing](https://en.wikipedia.org/wiki/Fang_Binxing) Class at [GZHU](https://www.gzhu.edu.cn/), graduating in 2023.
 
