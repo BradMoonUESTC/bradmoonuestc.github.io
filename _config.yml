@@ -116,6 +116,7 @@ giscus:
   lang: en
 audit_bounties_total: 68570  # 总金额
 audit_bounties_rank: 2  # 排名
+audit_bounties_link: https://app.secure3.io/zh/leaderboard
 # Disqus comments (DEPRECATED)
 disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
