@@ -3,9 +3,6 @@
     <div class="repo p-2 text-center me-3" style="width: 250px;">
       <a href="{{ project.url }}">
         <div class="card hoverable">
-          {% if project.img %}
-            {% include figure.liquid path=project.img alt="project thumbnail" class="card-img-top" style="height: 120px; object-fit: cover;" %}
-          {% endif %}
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.description }}</p>
