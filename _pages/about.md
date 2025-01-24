@@ -24,6 +24,4 @@ I received my B.E. degree from [UESTC](https://www.uestc.edu.cn/) in 2015. After
 
 I am very fortunate to be advised by [Prof. Yang Liu](https://personal.ntu.edu.sg/yangliu/) from [NTU](https://www.ntu.edu.sg/), [Prof. Daoyuan Wu](https://daoyuan14.github.io/) from [HKUST](https://hkust.edu.hk/), and [Prof. Shen Su](https://scholar.google.com/citations?user=VQm4Ns4AAAAJ&hl=en) from [GZHU](https://www.gzhu.edu.cn/).
 
-Thanks to my wife and daughter for their support of my career.
-
 

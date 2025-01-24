@@ -47,19 +47,32 @@ layout: default
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
-  <!-- Selected projects -->
+
+    
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+    <!-- Selected projects -->
     {% if page.selected_projects %}
       <h2>
         <a href="{{ '/projects/' | relative_url }}" style="color: inherit">featured projects</a>
       </h2>
       {% include selected_projects.liquid %}
     {% endif %}
+
+
+    <!-- Audit bounties -->
     {% if page.audit_bounties %}
       <h2>
         <a style="color: inherit">audit bounties</a>
       </h2>
       {% include audit_bounties.liquid %}
     {% endif %}
+
     <!-- Latest posts -->
     {% if site.latest_posts and site.latest_posts.enabled %}
       <h2>
@@ -68,17 +81,6 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-   
-
-    
     <!-- Social -->
     {% if page.social %}
       <div class="social">
