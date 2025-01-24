@@ -1,10 +1,10 @@
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-start align-items-start">
   {% for project in site.data.projects.featured %}
-    <div class="repo p-2 text-center me-3">
+    <div class="repo p-2 text-center me-3" style="width: 300px;">
       <a href="{{ project.url }}">
         <div class="card hoverable">
           {% if project.img %}
-            {% include figure.liquid path=project.img alt="project thumbnail" class="card-img-top" %}
+            {% include figure.liquid path=project.img alt="project thumbnail" class="card-img-top" style="height: 150px; object-fit: cover;" %}
           {% endif %}
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
