@@ -1356,7 +1356,11 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: white;
 }
-
+.badge.award {
+  background-color: #dc3545;  // 红色
+  color: white;
+  margin-left: 5px;
+}
 .badge.level {
   background-color: #28a745;  // 绿色
   color: white;

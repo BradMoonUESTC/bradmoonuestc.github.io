@@ -32,6 +32,9 @@
       {%- if entry.level -%}
         <span class="badge level">{{entry.level}}</span>
       {%- endif -%}
+      {%- if entry.award -%}
+        <span class="badge award">{{entry.award_name}}</span>
+      {%- endif -%}
       {{ entry.title }}
     </div>
     <!-- Author -->
