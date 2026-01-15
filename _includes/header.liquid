@@ -56,6 +56,21 @@
             </a>
           </li>
 
+          <!-- Resume PDF -->
+          {% assign cv_page = site.pages | where: 'layout', 'cv' | first %}
+          {% if cv_page and cv_page.cv_pdf %}
+            {% if cv_page.cv_pdf contains '://' %}
+              {% assign resume_pdf_url = cv_page.cv_pdf %}
+            {% else %}
+              {% assign resume_pdf_url = cv_page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+            {% endif %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ resume_pdf_url }}" target="_blank" rel="noopener noreferrer">
+                Resume PDF
+              </a>
+            </li>
+          {% endif %}
+
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
