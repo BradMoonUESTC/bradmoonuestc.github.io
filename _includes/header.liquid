@@ -66,7 +66,19 @@
             {% endif %}
             <li class="nav-item">
               <a class="nav-link" href="{{ resume_pdf_url }}" target="_blank" rel="noopener noreferrer">
-                Resume PDF
+                Resume
+              </a>
+            </li>
+          {% endif %}
+          {% if cv_page and cv_page.cv_pdf_zh %}
+            {% if cv_page.cv_pdf_zh contains '://' %}
+              {% assign resume_pdf_zh_url = cv_page.cv_pdf_zh %}
+            {% else %}
+              {% assign resume_pdf_zh_url = cv_page.cv_pdf_zh | prepend: 'assets/pdf/' | relative_url %}
+            {% endif %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ resume_pdf_zh_url }}" target="_blank" rel="noopener noreferrer">
+                Resume (中文)
               </a>
             </li>
           {% endif %}
