@@ -1,12 +1,22 @@
+stars_updated: 2026-09-09
 featured:
-  - name: "Finite Monkey Engine"
-    description: "LLM Engine for all kinds of code audit"
-    url: "https://github.com/BradMoonUESTC/finite-monkey-engine"
-    img: "assets/img/image.png"
-    github: "BradMoonUESTC/finite-monkey-engine"
-    
-  - name: "Falcon"
-    description: "SAST Engine for smart contract audit"
-    url: "https://github.com/MetaTrustLabs/falcon-metatrust"
-    img: "assets/img/110718206.png"
-    github: "MetaTrustLabs/falcon-metatrust" 
+  - name: Finite Monkey Engine
+    description: An LLM-powered engine for smart contract auditing and vulnerability analysis.
+    url: https://github.com/BradMoonUESTC/finite-monkey-engine
+    github: BradMoonUESTC/finite-monkey-engine
+    stars: 360
+  - name: Falcon
+    description: A Solidity static analysis framework extending Slither for smart contract security auditing.
+    url: https://github.com/MetaTrustLabs/falcon-metatrust
+    github: MetaTrustLabs/falcon-metatrust
+    stars: 88
+  - name: TxAnalyzer
+    description: An agent-based tool for blockchain attack analysis, collecting EVM and Solana transaction artifacts and investigating exploit root causes.
+    url: https://github.com/BradMoonUESTC/TxAnalyzer
+    github: BradMoonUESTC/TxAnalyzer
+    stars: 49
+  - name: Code Audit Hinter
+    description: A VS Code extension that uses retrieval-augmented generation to provide security audit hints and generate test cases.
+    url: https://github.com/BradMoonUESTC/audit-hint
+    github: BradMoonUESTC/audit-hint
+    stars: 39

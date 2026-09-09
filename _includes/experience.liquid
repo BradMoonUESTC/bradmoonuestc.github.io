@@ -1,0 +1,23 @@
+<div class="experience-list">
+  {% for position in site.data.experience %}
+    <section class="experience-entry" aria-label="{{ position.organization }} experience">
+      <div class="experience-dates">
+        {% for period in position.periods %}
+          <span>{{ period }}</span>
+        {% endfor %}
+      </div>
+      <div class="experience-copy">
+        <h3>{{ position.organization }}</h3>
+        <p class="experience-role">{{ position.role }}</p>
+        <p>{{ position.summary }}</p>
+        {% if include.detailed %}
+          <ul>
+            {% for detail in position.details %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

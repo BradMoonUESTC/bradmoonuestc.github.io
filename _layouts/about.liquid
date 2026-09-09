@@ -1,97 +1,94 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+<div class="post academic-home">
+  <header class="intro">
+    <div class="intro-copy">
+      <p class="eyebrow">Research &amp; practice</p>
+      <h1>
+        {{ site.first_name }}
         {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+      </h1>
+      <p class="intro-role">{{ page.subtitle }}</p>
+      <nav class="profile-links" aria-label="Contact and research profiles">
+        <a href="mailto:{{ site.data.socials.email }}">Email</a>
+        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>
+        <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+        <a href="https://orcid.org/{{ site.data.socials.orcid_id }}">ORCID</a>
+        <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/">LinkedIn</a>
+        <a href="https://x.com/{{ site.data.socials.x_username }}" aria-label="X (Twitter)">X</a>
+      </nav>
+    </div>
+    {% if page.profile.image %}
+      <img
+        class="intro-portrait"
+        src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
+        alt="{{ site.first_name }} {{ site.last_name }}"
+        width="164"
+        height="184"
+        fetchpriority="high"
+      >
+    {% endif %}
   </header>
-
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
+    <div class="biography">{{ content }}</div>
+    {% if page.news and site.announcements.enabled %}
+      <section class="home-section" aria-labelledby="news-heading">
+        <div class="section-heading">
+          <h2 id="news-heading">News</h2>
+          <a href="{{ '/news/' | relative_url }}">All updates <span aria-hidden="true">↗</span></a>
+        </div>
+        {% include news.liquid %}
+      </section>
     {% endif %}
-
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.news and site.announcements and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    
-    <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="home-section" id="research" aria-labelledby="research-heading">
+        <div class="section-heading">
+          <h2 id="research-heading">Publications &amp; preprints</h2>
+          <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}"
+            >Google Scholar <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
-    <!-- Selected projects -->
-    {% if page.selected_projects %}
-      <h2>
-        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">featured projects</a>
-      </h2>
-      {% include selected_projects.liquid %}
-    {% endif %}
-
-
-    <!-- Audit bounties -->
-    {% if page.audit_bounties %}
-      <h2>
-        <a style="color: inherit">audit bounties</a>
-      </h2>
-      {% include audit_bounties.liquid %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if site.latest_posts and site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+    <section class="home-section" id="experience" aria-labelledby="experience-heading">
+      <div class="section-heading">
+        <h2 id="experience-heading">Industry experience</h2>
+        <a href="{{ '/experience/' | relative_url }}">Full experience <span aria-hidden="true">↗</span></a>
       </div>
+      {% include experience.liquid %}
+    </section>
+    {% if page.selected_projects %}
+      <section class="home-section" id="engineering" aria-labelledby="engineering-heading">
+        <div class="section-heading">
+          <h2 id="engineering-heading">Open-source tools</h2>
+          <a href="{{ '/projects/' | relative_url }}">Projects <span aria-hidden="true">↗</span></a>
+        </div>
+        {% include selected_projects.liquid %}
+      </section>
     {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
+    <section class="home-section" id="media" aria-labelledby="media-heading">
+      <div class="section-heading"><h2 id="media-heading">Media &amp; interviews</h2></div>
+      {% include reading_list.liquid entries=site.data.media %}
+    </section>
+    <section class="home-section" id="writing" aria-labelledby="writing-heading">
+      <div class="section-heading">
+        <h2 id="writing-heading">Selected writing</h2>
+        <a href="https://x.com/{{ site.data.socials.x_username }}">More on X <span aria-hidden="true">↗</span></a>
+      </div>
+      {% include reading_list.liquid entries=site.data.writing %}
+    </section>
+    <section class="home-section" id="service" aria-labelledby="service-heading">
+      <div class="section-heading"><h2 id="service-heading">Academic service</h2></div>
+      {% include academic_service.liquid %}
+    </section>
+    {% if page.audit_bounties %}
+      <section class="home-section" aria-labelledby="security-heading">
+        <div class="section-heading"><h2 id="security-heading">Security practice</h2></div>
+        <p>Alongside my research, I audit smart contracts and investigate vulnerabilities in blockchain applications.</p>
+        {% include audit_bounties.liquid %}
+      </section>
     {% endif %}
   </article>
 </div>

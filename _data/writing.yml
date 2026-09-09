@@ -1,0 +1,23 @@
+# Dates refer to the linked Chinese editions on 登链社区.
+# Each edition credits xy9301 and links to the original X post below.
+- title: AI安全审计智能体核心方法论(第二部分)
+  date: 2026-04-01
+  publisher: 登链社区
+  kind: Essay
+  language: Chinese
+  title_lang: zh-Hans
+  url: https://learnblockchain.cn/article/24714
+  link_label: Read in Chinese
+  original_url: https://x.com/xy9301/status/2036017855381340269
+  description: Building audit agents with stable feedback loops, evolving skills, and reliable vulnerability validation.
+
+- title: AI审计方法论：你需要知道的一切 (第一部分)
+  date: 2026-03-16
+  publisher: 登链社区
+  kind: Essay
+  language: Chinese
+  title_lang: zh-Hans
+  url: https://learnblockchain.cn/article/24454
+  link_label: Read in Chinese
+  original_url: https://x.com/xy9301/status/2033186266649640980
+  description: From framework-heavy pipelines to coding agents, with human audit workflows as the starting point for automation.

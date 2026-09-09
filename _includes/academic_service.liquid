@@ -1,0 +1,13 @@
+<ul class="service-list">
+  {% for item in site.data.service %}
+    <li>
+      <span class="service-year">{{ item.year | default: 'Journals' }}</span>
+      <div>
+        <strong>{{ item.role }}</strong>, <a href="{{ item.url }}">{{ item.venue }}</a>
+        {% if item.event %}
+          <p class="service-event">{{ item.event }}</p>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

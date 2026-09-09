@@ -1,0 +1,32 @@
+- organization: CertiK
+  role: Head of AI Research
+  periods:
+    - Nov 2025 – Present
+  summary: Lead AI research and core engineering for an in-house security auditing engine, connecting new auditing methods with practical vulnerability detection.
+  details:
+    - Lead the research, development, and delivery of an AI-powered smart contract auditing engine, with hands-on responsibility for its core implementation.
+    - Develop agent-based auditing methods that combine security expertise with iterative analysis, from vulnerability discovery to finding validation and reporting.
+    - Build evaluation and regression workflows to assess detection quality and guide improvements to the auditing engine.
+    - Improve engineering reliability and computational efficiency, and translate research into capabilities for security auditing workflows.
+
+- organization: OKX
+  role: Senior Security Engineer
+  periods:
+    - May 2024 – Nov 2025
+    - Apr 2022 – Oct 2022
+  summary: Owned ATMS (Asset Transaction Monitoring System) for first-line anti-money-laundering risk control, covering external deposits, address intelligence, and investigations.
+  details:
+    - Held end-to-end responsibility for the development and operation of ATMS, supporting first-line anti-money-laundering (AML) risk control for external deposits into OKX.
+    - Oversaw deposit monitoring and address risk assessment, translating on-chain intelligence into operational risk decisions.
+    - Led high-risk address tracing, identification of linked addresses, and manual on-chain investigations to assess fund flows and maintain address intelligence.
+    - Owned risk statistics and reporting across monitoring and investigation workflows, supporting day-to-day risk-control operations.
+
+- organization: MetaTrust
+  role: Security Lead / Consultant
+  periods:
+    - Oct 2022 – Aug 2025
+  summary: Led smart contract audits and security tooling development, combining Slither/Falcon static analysis with research on AI-assisted auditing.
+  details:
+    - Led smart contract security audits, vulnerability analysis, and technical delivery for blockchain and DeFi applications.
+    - Developed and extended Slither/Falcon analysis capabilities and vulnerability detectors, bringing audit experience into automated security tooling.
+    - Contributed to GPTScan and the core implementation of PropertyGPT, working with academic collaborators on AI-assisted vulnerability detection and smart contract verification.

@@ -1,0 +1,14 @@
+- year: 2026
+  role: Reviewer
+  venue: The 1st Workshop on Interpreting Agent Behavior (IAB)
+  event: NeurIPS 2026 Workshop
+  url: https://iab-agents.github.io/
+- role: Reviewer
+  venue: IEEE Transactions on Software Engineering (TSE)
+  url: https://www.computer.org/csdl/journal/ts
+- role: Reviewer
+  venue: ACM Transactions on Software Engineering and Methodology (TOSEM)
+  url: https://dl.acm.org/journal/tosem
+- role: Reviewer
+  venue: ACM Transactions on Privacy and Security (TOPS)
+  url: https://dl.acm.org/journal/tops

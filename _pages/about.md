@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Senior Security Engineer at XXX</a>
+subtitle: Head of AI Research · CertiK
 
 profile:
   align: right
@@ -18,10 +18,11 @@ selected_projects: true # includes a list of projects marked as "selected={true}
 social: true # includes social icons at the bottom of the page
 audit_bounties: true # includes a list of audit bounties
 ---
-I'm a Security Engineer in blockchain security. My research interests span blockchain security, software security, and LLM applications in security, bridging both academic research and industry practice.
+
+I work on **blockchain security and AI for software security**, connecting academic research with hands-on security engineering. My interests include smart contract analysis, vulnerability detection, and LLM applications in security.
+
+At CertiK, I lead AI research and core development of an in-house security auditing engine. My [industry experience](/experience/) also includes owning first-line AML transaction monitoring at OKX and leading smart contract audits and security tooling development at MetaTrust.
 
 I received my B.E. degree from [UESTC](https://www.uestc.edu.cn/) in 2015. After three years as a software engineer, I pursued my M.S. degree in the Academician [Fang Binxing](https://en.wikipedia.org/wiki/Fang_Binxing) Class at [GZHU](https://www.gzhu.edu.cn/), graduating in 2023.
 
 I am very fortunate to be advised by [Prof. Yang Liu](https://personal.ntu.edu.sg/yangliu/) from [NTU](https://www.ntu.edu.sg/), [Prof. Daoyuan Wu](https://daoyuan14.github.io/) from [HKUST](https://hkust.edu.hk/), and [Prof. Shen Su](https://scholar.google.com/citations?user=VQm4Ns4AAAAJ&hl=en) from [GZHU](https://www.gzhu.edu.cn/).
-
-

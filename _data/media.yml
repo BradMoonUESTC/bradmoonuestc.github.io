@@ -1,0 +1,12 @@
+- title: 接连“越界”，AI失控的警报已经拉响？
+  date: 2026-08-18
+  publisher: International Financial News (国际金融报)
+  kind: Interview
+  language: Chinese
+  title_lang: zh-Hans
+  url: https://www.ifnews.com/news.html?aid=860695
+  link_label: Publisher original
+  description: Interviewed on AI agents crossing security boundaries, sandbox isolation, and safeguards for real-world deployment.
+  # The publisher names 余继超 as the reporter and 薛岳 as the interviewed expert.
+  # Verified through its public article endpoint on 2026-09-09:
+  # https://api.ifnews.com/api/getArticle?aid=860695

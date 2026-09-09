@@ -1,20 +1,22 @@
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-start align-items-start">
+<div class="research-tools">
   {% for project in site.data.projects.featured %}
-    <div class="repo p-2 text-center me-3" style="width: 250px;">
-      <a href="{{ project.url }}">
-        <div class="card hoverable">
-          <div class="card-body">
-            <h5 class="card-title">{{ project.name }}</h5>
-            <p class="card-text">{{ project.description }}</p>
-            {% if project.github %}
-              <div class="github-stats">
-                <img src="https://img.shields.io/github/forks/{{ project.github }}?style=flat-square" alt="GitHub forks">
-                <img src="https://img.shields.io/github/stars/{{ project.github }}?style=flat-square" alt="GitHub stars">
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      </a>
-    </div>
+    <article class="tool-entry">
+      <h3>
+        <a href="{{ project.url }}">
+          {{- project.name }}
+          <span aria-hidden="true">↗</span></a
+        >
+      </h3>
+      <p>{{ project.description }}</p>
+      {% if project.github -%}
+        <a class="tool-source" href="https://github.com/{{ project.github }}">Source code</a>
+        {% if project.stars %}
+          <a class="tool-stars" href="https://github.com/{{ project.github }}/stargazers" aria-label="{{ project.stars }} GitHub stars"
+            >☆ {{ project.stars -}}
+          </a>
+        {% endif %}
+      {%- endif %}
+    </article>
   {% endfor %}
 </div>
+<p class="tool-stats-date">GitHub stars as of {{ site.data.projects.stars_updated | date: '%b %-d, %Y' }}.</p>
