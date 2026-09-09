@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was interviewed by **International Financial News (国际金融报)** on AI agent safety: [接连“越界”，AI失控的警报已经拉响？](https://www.ifnews.com/news.html?aid=860695).
+I was interviewed by **International Financial News** on AI agent safety: [Repeated Boundary Violations: Is AI Getting Out of Control?](https://www.ifnews.com/news.html?aid=860695).
